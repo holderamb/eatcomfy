@@ -124,14 +124,14 @@ body {
     border: 2px solid #1976d2;
 }
 #leaderboard {
-    position: absolute;
+    position: fixed;
     top: 10px;
     right: 10px;
     background: rgba(255,255,255,0.85);
     padding: 12px 18px;
     border-radius: 10px;
     min-width: 180px;
-    z-index: 10;
+    z-index: 100;
     font-family: sans-serif;
     display: none;
 }
