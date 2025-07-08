@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EatComfy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="musicDropdownContainerFixed">
+        <button class="menu-btn" id="musicDropdownBtn" title="Music"><span id="musicIcon">🎵</span></button>
+        <div id="musicDropdown" class="dropdown-content">
+            <div class="music-option" data-music="anime">Anime</div>
+            <div class="music-option" data-music="jazz">Jazz</div>
+            <div class="music-option" data-music="rock">Rock</div>
+            <div class="music-option" data-music="phonk">Phonk</div>
+            <div class="music-option" data-music="classic">Classic</div>
+            <div class="music-option" data-music="off">Off</div>
+        </div>
+    </div>
+    <div id="container">
+        <div id="nicknameMenu">
+            <h2>Enter your nickname</h2>
+            <input type="text" id="nicknameInput" maxlength="16" placeholder="Your nickname" autocomplete="off">
+            <button class="menu-btn" id="nicknameBtn">OK</button>
+        </div>
+        <div id="mainMenu">
+            <h1>EatComfy</h1>
+            <button class="menu-btn" id="playBtn">Play</button>
+            <button class="menu-btn" id="shopBtn">Shop</button>
+        </div>
+        <div id="shopMenu">
+            <h2>Shop</h2>
+            <div class="skin-shop-list" id="shopSkinList"></div>
+            <div id="shopScore">Your points: <span id="shopPoints">0</span></div>
+            <button class="menu-btn" id="shopBackBtn">Back</button>
+        </div>
+        <canvas id="gameArea" width="900" height="600"></canvas>
+        <div id="skinSelector"></div>
+        <div id="leaderboard" style="position: relative;">
+        </div>
+        <div id="scoreDisplay">Score: <span id="score">0</span></div>
+    </div>
+    <!-- Audio -->
+    <audio id="bgMusic" src="sounds/music.mp3" loop preload="auto"></audio>
+    <audio id="popSound" src="sounds/pop.mp3" preload="auto"></audio>
+    <audio id="eatSound" src="sounds/eat.mp3" preload="auto"></audio>
+    <audio id="loseSound" src="sounds/lose.mp3" preload="auto"></audio>
+    <audio id="winSound" src="sounds/win.mp3" preload="auto"></audio>
+    <audio id="startSound" src="sounds/start.mp3" preload="auto"></audio>
+    <audio id="buySound" src="sounds/buy.mp3" preload="auto"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
